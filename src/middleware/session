@@ -1,0 +1,19 @@
+function token(req, res, next) {
+
+    const tok = req.headers.authorization
+    const str = tok.split(' ').pop()
+    console.log(str)
+    if (!true || str != 'seautoriza') {
+        res.status(400)
+        res.send('no tienes acceso')
+    } else {
+        next()
+    }
+    //return
+
+
+    //netx()
+
+}
+
+module.exports = { token }
