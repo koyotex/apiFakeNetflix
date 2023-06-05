@@ -2,7 +2,7 @@ const express = require('express')
 const { getJsonNetflix } = require('./getJsonNetflix')
 
 const app = express()
-const port = 3000
+const port = 80
 
 // app.get('/login/:user$:password', (req, res) => { res.send('login') })
 
